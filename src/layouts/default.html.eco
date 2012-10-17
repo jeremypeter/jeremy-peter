@@ -18,7 +18,7 @@
 	<%- @getBlock('meta').toHTML() %>
 
 	<!-- DocPad Styles + Our Own -->
-	<%- @getBlock('css').add(['css/normalize.css', 'css/styles.css.less','css/global.css.less']).toHTML() %>
+	<%- @getBlock('styles').add(['/css/normalize.css', '/css/styles.css']).toHTML() %>
 
 	<!-- Icons -->
 	<!-- Favicon -->
@@ -37,14 +37,10 @@
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
 
-    <div class="wrapper">
-    	<header>
-    		
-    		<nav class="main">
-    			<ul></ul>
-    		</nav>
+    <div class="container">
+    	
+      <%- @partial('header.html')%>
 
-    	</header>
     	<div class="content">
     		<%- @content%>
 

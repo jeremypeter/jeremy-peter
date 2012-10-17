@@ -87,8 +87,6 @@ docpadConfig = {
 				else
 					next()
 
-	initialConfig:
-		port: 9999
 }
 
 # Export our DocPad Configuration
