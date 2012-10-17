@@ -1,0 +1,11 @@
+.borderRadius (@radius){
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+h1 {
+  background-color: #000;
+  padding: 20px;
+  .borderRadius(5px);
+}

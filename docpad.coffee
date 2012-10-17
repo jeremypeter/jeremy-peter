@@ -21,7 +21,7 @@ docpadConfig = {
 			]
 
 			# The default title of our website
-			title: "Your Website"
+			title: "Jeremy Peter"
 
 			# The website description (for SEO)
 			description: """
@@ -86,6 +86,9 @@ docpadConfig = {
 					res.redirect(newUrl+req.url, 301)
 				else
 					next()
+
+	initialConfig:
+		port: 9999
 }
 
 # Export our DocPad Configuration
