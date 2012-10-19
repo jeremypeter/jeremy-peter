@@ -19,6 +19,8 @@
 
 	<!-- DocPad Styles + Our Own -->
 	<%- @getBlock('styles').add(['/css/normalize.css', '/css/styles.css']).toHTML() %>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 
 	<!-- Icons -->
 	<!-- Favicon -->
@@ -53,6 +55,6 @@
     <script>window.jQuery || document.write('<script src="/js/jquery.js"><\/script>')</script>
 
 	<!-- DocPad Scripts + Our Own -->
-	<%- @getBlock('scripts').add(['/js/log.js', '/js/modernizr.js']).toHTML() %>
+	<%- @getBlock('scripts').add(['/js/log.js', '/js/modernizr.js', '/js/main.js']).toHTML() %>
 </body>
 </html>
